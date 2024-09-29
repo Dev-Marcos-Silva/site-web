@@ -3,32 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>twitter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <title>travo</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <header>
-        <img src="img/twitter.png" alt="logo">
-        <nav> 
-            <ul>
-                <li><a href="#Sobre">Sobre</a></li>
-                <li><a href="#Produtos">Produtos</a></li>
-                <li><a href="#Contatos">Contatos</a></li>
-                <li><a href="#Endereço">Endereço</a></li>
-            </ul> 
+    <header class="header">
+        <h1 class="title">Tra<span class="title">v</span>o.</h1>   
+        <nav class="header_nav">
+            <ul class="ul_item">
+                <li><a href="#">Home</a></li>
+                <li><a href="#section_about">About</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Tour</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="header_button">
+                <button class="button_nav" type="button">Sign up</button>
+                <button class="button_nav" type="button">Log in</button>
+            </div>
         </nav>
     </header>
-    <section id="Sobre"> 
 
+    <section class="section_home">
+        <section class="section_left">
+            <span class="explore"> <img src="img/aviao.png" alt="" class="icon_aviao">Explore The World <img class="traco" src="img/traco.png" alt=""></span>
+            <h2 class="title_h2" >Go where your <img class="asterisco" src="img/asterisco.png" alt="">
+                <span class="span_h2">Dreams</span> take you.
+            </h2>
+            <p class="texto">Let's find your destination where Will your next aventure take you?
+               Explore The world with ease, and let  us guilde you to your perfect 
+               gateway.</p>
+            <div class="button_home_style">
+                <button class="button_home" type="button">Book Now</button>
+                <button class="button_home" id="play_demo" type="button"> <img src="img/botao-play.png" alt="">Play Demo</button>
+            </div>
+        </section>
+        <section class="section_right">
+            <img src="img/mulher.png" alt="" class="imagem_home">
+            <aside id="planeta" class="aside_card"> <img class="aside" src="img/planeta-terra.png" alt=""> <p class="apartir"><span class="card">100+</span>Destination</p></aside>
+            <aside id="verificar" class="aside_card"> <img class="aside" src="img/verificar.png" alt=""> <p class="apartir"><span class="card">100%</span>Verified</p></aside>
+            <aside id="estrela" class="aside_card"> <img class="aside" src="img/estrela.png" alt=""> <p class="apartir"><span class="card">20k</span>Review</p></aside>
+        </section>
     </section>
-    <section id="Produtos">
 
+    <section class="section_dados">
+        <aside class="aside_dados"> <img class="img_dados" src="img/localizacao.png"alt=""> <p class="dados"><span class="span_date">Location</span>Where are you going?</p></aside>
+        <aside class="aside_dados"> <img class="img_dados" src="img/calendario.png"alt=""> <p class="dados"><span class="span_date">Date</span>Choose date</p></aside>
+        <aside class="aside_dados"> <img class="img_dados" src="img/perfil-de-usuario.png"alt=""> <p id="side1" class="dados"><span class="span_date">Person</span>How many person?</p></aside>
+        <img id="procurar" src="img/lupa.png" alt="">
     </section>
-    <section id="Contatos">
 
+    <section id="section_about" class="section_about">
+        <section class="imagem">
+            <img id="paisagem1" src="img/img_paisagem/paisagem1.jpeg" alt="">
+            <img id="paisagem2" src="img/img_paisagem/paisagem2.jpeg" alt="">
+        </section>
+        <section class="about">
+            <span class="explore" >About Us<img class="traco" src="img/traco.png" alt=""></span>
+            <h2 class="title_h2">We <span class="span_h2">Recommend</span></h2>
+            <h3 class="title_h3">Beautiful Destinations Every Month</h3>
+            <p class="texto">Explore our expert picks for your next journey. Whether you're seeking a our recommendations will help you find the perfect place to explore.</p>
+            <aside class="aside_about">
+                <div class="div_about"><span class="span_about">100+</span>Location</div>
+                <div class="div_about"><span class="span_about">2000+</span>Customer</div>
+                <div class="div_about"><span class="span_about">1500+</span>Review</div>
+            </aside>
+        </section>
     </section>
-    <section id="Endereço">
+
+    <section class="section_explore">
+        <section class="explore_now" >
+            <span class="explore">Explore Now<img class="traco" src="img/traco.png" alt=""></span>
+            <h2 class="title_h2" id="title_center"><span class="span_h2" >Let's Find </span>Your Dream Destination Here!</h2>
+            <p class="texto" id="paragrafo_center" >Experience seamless travel planning with our user-friendly website, offering personalized itineraries and unbeatable deals.</p>
+
+            <section class="section_find">
+                <aside class="aside_dados"><img class="img_dados" src="img/localizacao.png" alt=""> <p class="dados"><span class="span_date" >Location</span>Where are you going? </p></aside>
+                <aside class="aside_dados"><img class="img_dados" src="img/calendario.png" alt=""> <p class="dados"><span class="span_date" >Check in</span>Choose date </p></aside>
+                <aside class="aside_dados"><img class="img_dados" src="img/calendario.png" alt=""> <p class="dados"><span class="span_date">Check out</span>Choose date </p></aside>
+                <aside class="aside_dados"><img class="img_dados" src="img/perfil-de-usuario.png" alt=""> <p id="side2" class="dados"><span class="span_date" >Person</span>How many person? </p></aside>
+                <img id="procurar" src="img/lupa.png" alt="">
+            </section>
+        </section>
+       
+        <section class="carrossel">
+           <p id="selecionado" class="sugestoes" >All</p>
+           <p class="sugestoes" >Recommended</p>
+           <p class="sugestoes" >Mountain</p>
+           <p class="sugestoes" >Sea Beach </p>
+           <p class="sugestoes" >Nature</p>
+           <p class="sugestoes" >Forest</p>
+            <img id="seta" src="img/seta-direita.png" alt="">
+        </section>
 
     </section>
     
