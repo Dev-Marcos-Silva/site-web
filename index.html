@@ -8,26 +8,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <title>travo</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="shortcut icon" href="img/aviao.png" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <h1 class="title">Tra<span class="title">v</span>o.</h1>   
-        <nav class="header_nav">
-            <ul class="ul_item">
-                <li><a href="#">Home</a></li>
-                <li><a href="#section_about">About</a></li>
-                <li><a href="#">Destination</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            <div class="header_button">
-                <button class="button_nav" type="button">Sign up</button>
-                <button class="button_nav" type="button">Log in</button>
-            </div>
-        </nav>
-    </header>
 
+
+<header class="header">
+    <h1 class="title">Tra<span class="title">v</span>o.</h1>   
+    <nav class="header_nav">
+        <ul class="ul_item">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="header_button">
+            <button class="button_nav" type="button">Sign up</button>
+            <button class="button_nav" type="button">Log in</button>
+        </div>
+    </nav>
+</header>
+<main>
     <section class="section_home">
         <section class="section_left">
             <span class="explore"> <img src="img/aviao.png" alt="" class="icon_aviao">Explore The World <img class="traco" src="img/traco.png" alt=""></span>
@@ -39,7 +41,11 @@
                gateway.</p>
             <div class="button_home_style">
                 <button class="button_home" type="button">Book Now</button>
-                <button class="button_home" id="play_demo" type="button"> <img src="img/botao-play.png" alt="">Play Demo</button>
+                <button class="button_home" id="play_demo" type="button">
+                    <img id="my-img" src="img/botao-play.png"
+                     onmouseover="this.src='img/play-button.png'" 
+                     onmouseout="this.src='img/botao-play.png'"
+                      >Play Demo</button>
             </div>
         </section>
         <section class="section_right">
@@ -74,7 +80,6 @@
             </aside>
         </section>
     </section>
-
     <section class="section_explore">
         <section class="explore_now" >
             <span class="explore">Explore Now<img class="traco" src="img/traco.png" alt=""></span>
@@ -89,9 +94,8 @@
                 <img id="procurar" src="img/lupa.png" alt="">
             </section>
         </section>
-       
         <section class="carrossel">
-           <p id="selecionado" class="sugestoes" >All</p>
+           <p class="sugestoes" >All</p>
            <p class="sugestoes" >Recommended</p>
            <p class="sugestoes" >Mountain</p>
            <p class="sugestoes" >Sea Beach </p>
@@ -99,8 +103,99 @@
            <p class="sugestoes" >Forest</p>
             <img id="seta" src="img/seta-direita.png" alt="">
         </section>
-
     </section>
-    
+
+    <section class="section_travel" >
+        <aside class="carde_travel"><img class="img_travel" src="img/viagem/Bondi.jpeg" alt=""> <aside class="title_travel"><div class="endereco"><h4>Bondi Beach</h4><p class="local" > <img src="img/pin.png" alt="">Sydney, Australia</p></div> <span class="valor">$500</span> </aside><div class="avaliar"><img src="img/estrela.png" alt="" class="estrela">4.4</div></aside>
+        <aside class="carde_travel"><img class="img_travel" src="img/viagem/Tulum.jpeg" alt=""> <aside class="title_travel"><div class="endereco"><h4>Tulum Beach</h4><p class="local" > <img src="img/pin.png" alt="">Tulum, Mexico </p></div> <span class="valor">$300</span> </aside><div class="avaliar"><img src="img/estrela.png" alt="" class="estrela">4.3</div></aside>
+        <aside class="carde_travel"><img class="img_travel" src="img/viagem/Waikiki.jpeg" alt=""> <aside class="title_travel"><div class="endereco"><h4>Waikiki Beach</h4><p class="local" > <img src="img/pin.png" alt="">Hawail, USA </p></div> <span class="valor">$500</span> </aside><div class="avaliar"><img src="img/estrela.png" alt="" class="estrela">4.3</div></aside>
+        <aside class="carde_travel"><img class="img_travel" src="img/viagem/Kilauea.jpeg" alt=""> <aside class="title_travel"><div class="endereco"><h4>Kilauea</h4><p class="local" > <img src="img/pin.png" alt="">Hawail, USA </p></div> <span class="valor">$500</span> </aside><div class="avaliar"><img src="img/estrela.png" alt="" class="estrela">4.4</div></aside>
+        <aside class="carde_travel"><img class="img_travel" src="img/viagem/Eiffel.jpeg" alt=""> <aside class="title_travel"><div class="endereco"><h4>Effiel Tower</h4><p class="local" > <img src="img/pin.png" alt="">Paris, France </p></div> <span class="valor">$500</span> </aside><div class="avaliar"><img src="img/estrela.png" alt="" class="estrela">4.4</div></aside>
+        <aside class="carde_travel"><img class="img_travel" src="img/viagem/Fuji.jpeg" alt=""> <aside class="title_travel"><div class="endereco"><h4>Mount Fuji</h4><p class="local" > <img src="img/pin.png" alt="">Japan </p></div> <span class="valor">$500</span> </aside><div class="avaliar"><img src="img/estrela.png" alt="" class="estrela">4.4</div></aside>
+        <button id="viewmore" class="button_home" type="button">View More</button>
+    </section>
+
+    <section class="section_testimonial">
+        <section class="card_testimonial">
+            <span class="explore">Testimonial<img class="traco" src="img/traco.png" alt=""></span>
+            <h2 class="title_h2">What Our <span class="span_h2"> Customer</span></h2>
+            <h3 class="title_h3">Say About Us.</h3>
+
+            <div id="organizar">
+
+                <aside id="comenter_perfil" class="comenter">
+                    <h1 id="titulo_perfil" >Md. Saimun</h1>
+                    <p id="paragrafo_perfil" >Draka, Bangladesh</p>
+                </aside>
+
+                <aside id="comenter_texto" class="comenter">
+                    <img src="img/perfil-de-avaliação.jpeg" alt="" id="perfil-de-avaliação">
+
+                    <p class="paragrafo_comenter" >Lorem ipsum dolor sit amet consect adipisicing elit. 
+                        Optio labori veniam magnam eos praesentium sit, tryu
+                        reiciendis, quidem totam  
+                    </p> 
+                    <div class="avaliacao"> 
+                        <img src="img/avaliar/avaliacao_inteiro.png" alt="" class="estrala_avaliar">
+                        <img src="img/avaliar/avaliacao_inteiro.png" alt="" class="estrala_avaliar">
+                        <img src="img/avaliar/avaliacao_inteiro.png" alt="" class="estrala_avaliar">
+                        <img src="img/avaliar/avaliacao_inteiro.png" alt="" class="estrala_avaliar">
+                        <img src="img/avaliar/avaliacao_meio.png" alt="" class="estrala_avaliar">
+                    </div> 
+                </aside>  
+            </div>
+            <aside id="button">
+                <button class="ciclor"></button>
+                <button class="ciclor"></button>
+                <button class="ciclor"></button>
+            </aside>  
+        </section>
+
+        <section class="img_testimonial">
+            <img id="img_1" src="img/viagem/paisagem1.jpeg" alt="">
+            <img id="img_2" src="img/viagem/paisagem2.jpeg" alt="">
+            <img id="img_3" src="img/viagem/paisagem3.jpeg" alt="">
+            <img id="img_4" src="img/viagem/paisagem4.jpeg" alt="">
+        </section>
+    </section>
+</main>
+
+<footer id="footer">
+    <div id="infomation">
+        <ul>
+            <li> <h1 class="title">Tra<span class="title">v</span>o.</h1> </li>
+            <li><p>Discover the world, one journey at a time</p></li>
+            <li id="input_footer" >
+                <input placeholder="Enter your email"  type="email">
+                <button id="button_footer" type="submit" >Subscribe</button>
+            </li>
+        </ul>
+        <ul>
+            <li><h1>Quick Menu</h1></li>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Destination</li>
+            <li>Testimonial</li>
+        </ul>
+        <ul>
+            <li><h1>About Us</h1></li>
+            <li>Payment Plan</li>
+            <li>Make Saving</li>
+            <li>Tax calculator</li>
+            <li>Talk to us</li>
+        </ul>
+        <ul>
+            <li><h1>Contact Us</h1></li>
+            <li>Phone: +1 (800) 123-4567</li>
+            <li>Email: travo@gmail.com</li>
+            <li>Address: 123 Wanderlust Avenue,</li>
+            <li>Suite 456</li>
+        </ul>
+    </div>
+    <div id="copyright">
+        <p id="texto_copyright">Copyright&copy;2024 Travo. All right reserved</p>
+    </div>
+</footer>
+
 </body>
 </html>
